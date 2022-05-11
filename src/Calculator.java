@@ -7,7 +7,7 @@ class add implements Calculator
 {
 
     public void calculate() {
-        float result = 6 + 2;
+        float answer = 6 + 2;
     }
 	 
 }
@@ -16,7 +16,7 @@ class sub implements Calculator
 {
 
     public void calculate() {
-         float result = 6 + 2;
+         float answer = 6 + 2;
     }
 	 
 }
@@ -26,7 +26,7 @@ class mul implements Calculator
 {
 
     public void calculate() {
-         float result = 6 + 2;
+         float answer = 6 + 2;
     }
     
 	 
@@ -37,7 +37,7 @@ class div implements Calculator
 {
 
     public void calculate() {
-        float result = 6 + 2;
+        float answer = 6 + 2;
     }
 	 
 }
@@ -46,7 +46,7 @@ class mod implements Calculator
 {
 
     public void calculate() {
-        float result = 6 + 2;
+        float answer = 6 + 2;
     }
 	 
 }
