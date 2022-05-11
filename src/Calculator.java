@@ -16,7 +16,7 @@ class sub implements Calculator
 {
 
     public void calculate() {
-         float answer = 6 + 2;
+         float answer = 6 - 2;
     }
 	 
 }
@@ -26,7 +26,7 @@ class mul implements Calculator
 {
 
     public void calculate() {
-         float answer = 6 + 2;
+         float answer = 6 * 2;
     }
     
 	 
@@ -37,7 +37,7 @@ class div implements Calculator
 {
 
     public void calculate() {
-        float answer = 6 + 2;
+        float answer = 6 / 2;
     }
 	 
 }
@@ -46,7 +46,7 @@ class mod implements Calculator
 {
 
     public void calculate() {
-        float answer = 6 + 2;
+        float answer = 6 % 2;
     }
 	 
 }
@@ -64,9 +64,9 @@ class CalculatorFactory
 				 return new sub();
 			 case "mul":
 				 return new mul();
-                         case "div":
+             case "div":
 				 return new div();
-                         case "mod":
+             case "mod":
 				 return new mod();
 			 default:
 				 throw new Exception( "Calculator type : "+type+" cannot be instantiated");
@@ -89,7 +89,7 @@ class do_Oparetion
 		 Calculator mul = shapeFactory.getOparetion("mul");
 		 mul.calculate();
                  
-                 Calculator div = shapeFactory.getOparetion("div");
+        Calculator div = shapeFactory.getOparetion("div");
 		 div.calculate();
 		 
 		 Calculator mod= shapeFactory.getOparetion("mod");
