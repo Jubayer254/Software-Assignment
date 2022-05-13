@@ -51,6 +51,15 @@ class mod implements Calculator
 	 
 }
 
+class avg implements Calculator
+{
+
+    public void calculate() {
+        float answer = (6 + 2)/2;
+    }
+	 
+}
+
 class CalculatorFactory
 {
  
@@ -68,6 +77,8 @@ class CalculatorFactory
 				 return new div();
              case "mod":
 				 return new mod();
+			case "avg":
+				 return new avg();
 			 default:
 				 throw new Exception( "Calculator type : "+type+" cannot be instantiated");
 		 }
@@ -93,6 +104,9 @@ class do_Oparetion
 		 div.calculate();
 		 
 		 Calculator mod= shapeFactory.getOparetion("mod");
+		 mod.calculate();
+		 
+		 Calculator mod= shapeFactory.getOparetion("avg");
 		 mod.calculate();
 	 }
 }
